@@ -25,10 +25,12 @@ pip3.9 install dist/*.whl
 
 # Execução
 
--f full -> usa o arquivo de full dentro de /var/log/asterisk/full
--f full-20246585 -> usa o arquivo de full dentro de /var/log/asterisk/full-20246585
--f /tmp/full-2024 -> usa o arquivo de passado como  parametro
+ ## -n Nome do hostname 
 
--m message -> usa o arquivo de message dentro de /var/log/asterisk/message
--m message-20246585 -> usa o arquivo de message dentro de /var/log/asterisk/message-20246585
--m /tmp/message-2024 -> usa o arquivo de passado como parametro
+ ## -f full -> usa o arquivo de full dentro de /var/log/asterisk/full
+ ## -f full-20246585 -> usa o arquivo de full dentro de /var/log/asterisk/full-20246585
+ ## -f /tmp/full-2024 -> usa o arquivo de passado como  parametro
+
+ ## -m message -> usa o arquivo de message dentro de /var/log/asterisk/message
+ ## -m message-20246585 -> usa o arquivo de message dentro de /var/log/asterisk/message-20246585
+ ## -m /tmp/message-2024 -> usa o arquivo de passado como parametro

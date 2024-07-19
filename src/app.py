@@ -15,9 +15,12 @@ def init():
     
     full = args["f"]
     message = args["m"]
-    hostname = os.uname().nodename
+    hostname = args["n"]
     fullPath = None
     messagePath = None
+    
+    if not hostname:
+      hostname = os.uname().nodename
     
     if full:
       fullPath = full if "/" in full else f"/var/log/asterisk/{full}"

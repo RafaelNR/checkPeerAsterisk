@@ -1,9 +1,11 @@
 import argparse
+import os
 
 # Trata os argumentos
 def handleArgs():
 	# create and execute command line parser
 	parser = argparse.ArgumentParser(description="Gera arquivo de ramais do cliente")
+	parser.add_argument("-n", default=f"{os.uname().nodename}", help="Hostname.")
 	parser.add_argument("-f", help="Você pode adicionar somente nome do arquivo que deseja analise dentro da pasta de log ou um path inteiro.")
 	parser.add_argument("-m", help="Analise para quedas dos ramais. Você pode adicionar somente nome do arquivo que deseja analise dentro da pasta de log ou um path inteiro.")
 	# parser.add_argument("-i", metavar="ip", default="*", help="IP no header que enviará a solicitação (Tentara obter o IP Local)")

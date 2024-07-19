@@ -17,6 +17,7 @@ openpyxl = "^3.1.5"
 
 [tool.poetry.scripts]
 start = "src.__init__:init"
+check_peer = "src.__init__:init"
 
 [tool.poetry.dev-dependencies]
 
