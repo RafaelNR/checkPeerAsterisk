@@ -51,7 +51,6 @@ def checkRamaisRegisteredSintetico(full):
         "logs": filterLog
       })
       
-  print(logFinal)
       
-  # return logFinal
+  return logFinal
   
