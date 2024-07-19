@@ -9,7 +9,7 @@ def handleMessageAnalitico(lines):
   logArray = []
   
   for line in lines:
-    if("NOTICE[4122]" in line):
+    if("chan_sip.c: Peer" in line):
       
       dateRegex = r"\[(.*?)\]"
       dateMatch = re.match(dateRegex, line)

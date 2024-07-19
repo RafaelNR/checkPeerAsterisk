@@ -7,7 +7,7 @@ def checkRamaisRegisteredAnalitico(lines):
   logArray = []
   
   for line in lines:
-    if("VERBOSE[4122]" in line):
+    if("chan_sip.c: Registered" in line): 
       
       dateRegex = r"\[(.*?)\]"
       dateMatch = re.match(dateRegex, line)
